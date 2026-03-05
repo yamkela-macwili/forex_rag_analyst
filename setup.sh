@@ -7,15 +7,15 @@
 echo "Setting up AI Forex Market Analyst environment..."
 
 # -------- Create virtual environment --------
-if [ ! -d "venv" ]; then
+if [ ! -d ".venv" ]; then
     echo "Creating virtual environment..."
-    python3 -m venv venv
+    python3 -m venv .venv
 else
     echo "Virtual environment already exists."
 fi
 
 # Activate venv
-source venv/bin/activate
+source .venv/bin/activate
 
 # -------- Upgrade pip --------
 echo "Upgrading pip..."
